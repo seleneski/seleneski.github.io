@@ -7,7 +7,8 @@ This is a simple static website for GitHub Pages.
 - `index.html` is the homepage.
 - `cv.html` is the CV page.
 - `research.html` is the research page.
-- `unpublished-findings.html` is the unpublished findings page.
+- `teaching.html` is the teaching page.
+- `unpublished-findings.html` is the Off the Desk page.
 - `contact.html` is the contact page.
 - `assets/styles.css` controls the design.
 - `assets/theme.js` controls the light/dark theme button.

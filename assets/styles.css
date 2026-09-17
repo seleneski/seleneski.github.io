@@ -189,7 +189,7 @@ p {
 }
 
 .portrait {
-  width: 156px;
+  width: clamp(190px, 30vw, 240px);
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 8px;
