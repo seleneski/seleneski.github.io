@@ -344,6 +344,70 @@ details p {
   color: var(--text-soft);
 }
 
+.food-guide {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.food-card {
+  display: grid;
+  grid-template-columns: minmax(10rem, 13rem) 1fr;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.food-card:last-child {
+  border-bottom: 0;
+}
+
+.food-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+  background: var(--surface);
+}
+
+.food-photo-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.food-photo-grid .food-photo {
+  aspect-ratio: 4 / 3;
+}
+
+.food-photo.placeholder {
+  border: 1px dashed var(--border-strong);
+  background:
+    linear-gradient(135deg, transparent 0 48%, var(--border) 49% 51%, transparent 52%),
+    var(--surface);
+}
+
+.food-copy .eyebrow {
+  margin-bottom: 0.35rem;
+}
+
+.food-copy p {
+  color: var(--text-soft);
+}
+
+.food-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.food-copy .venue {
+  margin-bottom: 0.85rem;
+  color: var(--text-faint);
+}
+
+.food-copy .venue a {
+  color: var(--text-soft);
+  font-weight: 650;
+  text-decoration-color: var(--border-strong);
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding-block: 1.5rem 2rem;
@@ -377,6 +441,10 @@ details p {
   .details div {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  .food-card {
+    grid-template-columns: 1fr;
   }
 
   .actions,
