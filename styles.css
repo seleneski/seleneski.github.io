@@ -305,6 +305,12 @@ p {
   font-size: 0.92rem;
 }
 
+.evaluation {
+  margin: 0.15rem 0 0;
+  color: var(--text-faint);
+  font-size: 0.82rem;
+}
+
 .section-nav {
   display: flex;
   gap: 1rem;
@@ -437,6 +443,10 @@ details p {
   border-bottom: 1px solid var(--border);
 }
 
+.food-card.photo-heavy {
+  grid-template-columns: minmax(14rem, 18rem) 1fr;
+}
+
 .food-card:last-child {
   border-bottom: 0;
 }
@@ -452,6 +462,14 @@ details p {
 .food-photo-grid {
   display: grid;
   gap: 0.65rem;
+}
+
+.food-photo-grid.mosaic {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.food-photo-grid.mosaic .food-photo:first-child {
+  grid-column: 1 / -1;
 }
 
 .food-photo-grid .food-photo {
@@ -524,6 +542,10 @@ details p {
   }
 
   .food-card {
+    grid-template-columns: 1fr;
+  }
+
+  .food-card.photo-heavy {
     grid-template-columns: 1fr;
   }
 
