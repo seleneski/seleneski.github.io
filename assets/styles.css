@@ -468,6 +468,8 @@ details p {
 .food-photo-grid {
   display: grid;
   gap: 0.65rem;
+  align-self: start;
+  align-content: start;
 }
 
 .food-photo-grid.mosaic {
