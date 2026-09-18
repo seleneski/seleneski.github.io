@@ -306,9 +306,15 @@ p {
 }
 
 .evaluation {
-  margin: 0.15rem 0 0;
+  margin: 0.25rem 0 0;
   color: var(--text-faint);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+.timeline .evaluation {
+  font-size: 0.76rem;
 }
 
 .section-nav {
