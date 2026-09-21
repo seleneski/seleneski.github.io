@@ -250,6 +250,14 @@ p {
   margin-bottom: 2.75rem;
 }
 
+.offdesk-main {
+  width: min(100% - 2rem, 980px);
+}
+
+.offdesk-main .page-head {
+  max-width: var(--max-width);
+}
+
 .research-main {
   width: min(100% - 2rem, 1080px);
 }
@@ -443,14 +451,15 @@ details p {
 
 .food-card {
   display: grid;
-  grid-template-columns: minmax(10rem, 13rem) 1fr;
-  gap: 1.5rem;
-  padding-block: 1.5rem;
+  grid-template-columns: minmax(19rem, 22rem) minmax(0, 32rem);
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block: 1.85rem;
   border-bottom: 1px solid var(--border);
 }
 
 .food-card.photo-heavy {
-  grid-template-columns: minmax(14rem, 18rem) 1fr;
+  grid-template-columns: minmax(19rem, 22rem) minmax(0, 32rem);
 }
 
 .food-card:last-child {
@@ -459,7 +468,7 @@ details p {
 
 .food-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   border-radius: 6px;
   object-fit: cover;
   background: var(--surface);
@@ -473,11 +482,11 @@ details p {
 }
 
 .food-photo-grid.mosaic {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .food-photo-grid.mosaic .food-photo:first-child {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 .food-photo-grid .food-photo {
@@ -493,6 +502,10 @@ details p {
 
 .food-copy .eyebrow {
   margin-bottom: 0.35rem;
+}
+
+.food-copy {
+  max-width: 32rem;
 }
 
 .food-copy p {
